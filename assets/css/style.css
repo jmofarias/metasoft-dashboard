@@ -1,0 +1,735 @@
+:root {
+    --white: #FFF;
+    --white-100: #FFF5F8;
+    --white-200: #F4F4F4;
+    --white-300: #FAF1F6;
+
+    --pink-800: #F3316F;
+    --pink-600: #c485a3;
+    --pink-500: #C699AF;
+
+    --gray-500: #B7B7B7;
+    --gray-600: #606060;
+
+    --blue: #3F7EB8;
+
+    --green: #3FB8A9;
+
+    --red: #FA5757;
+
+    --yellow: #F8B917;
+}
+
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--green-500);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--pink-500);
+    background-color: var(--white-300);
+    overflow: auto;
+}
+
+.home {
+    justify-content: center;
+}
+
+.logo {
+    margin-top: 3rem;
+}
+
+.logo-large {
+    height: auto;
+    width: 85%;
+}
+
+.logo-small {
+    height: auto;
+    width: 30px;
+}
+
+.sidebar {
+    background-color: var(--white);
+    height: auto;
+    border-radius: 2.4rem;
+    width: 14%;
+}
+
+/* @media (min-width: 576px) {
+    .side-bar {
+        min-width: 20rem;
+    }
+} */
+
+.nav-pills {
+    margin-top: 5rem;
+    gap: 1.6rem;
+    width: 16rem;
+}
+
+.text-nav {
+    color: var(--pink-500);
+}
+
+.nav-link {
+    background-color: transparent;
+    font-size: 1.5rem;
+    border-radius: 1.6rem !important;
+    padding-left: 2.2rem;
+}
+
+.nav-link span {
+    font-size: 1.5rem !important;
+    font-weight: 300;
+}
+
+.nav-link.active {
+    background-color: var(--pink-800) !important;
+    border-radius: 1.8rem;
+}
+
+.nav-link:hover {
+    background-color: var(--pink-800);
+    color: var(--white);
+}
+
+.nav-link:focus {
+    color: inherit;
+}
+
+.row {
+    margin: 0;
+}
+
+.main {
+    margin: 1.6rem;
+    padding: 0;
+    flex-shrink: inherit;
+}
+
+.containerMain {
+    padding: 0;
+}
+
+.contentTable {
+    padding: 0;
+    padding-left: 1.6rem;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.marginCards {
+    padding: 0 !important;
+    padding-left: 1.6rem !important;
+    margin-bottom: 1.6rem !important;
+}
+
+.card {
+    border: none;
+}
+
+.col {
+    padding: 0;
+}
+
+.cardLight {
+    background-color: var(--white);
+    border-radius: 2rem;
+}
+
+.cardLinear {
+    background: linear-gradient(105deg, #F3316F 0%, #910048 100%);
+    ;
+    border-radius: 2rem;
+}
+
+.cardHeader {
+    min-height: 70px;
+}
+
+.buttonsFilter {
+    gap: 0.5rem;
+}
+
+.buttonFilter {
+    background-color: var(--pink-500);
+    color: var(--white);
+    border: none;
+    padding: 0.1rem 0.8rem;
+    border-radius: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.buttonFilter:hover {
+    background-color: var(--pink-600);
+    transition: 0.5s;
+}
+
+.buttonFilter:focus {
+    background-color: var(--pink-800);
+    transition: 0.5s;
+}
+
+.buttonFilterCard {
+    background-color: var(--white-100);
+    color: var(--pink-500);
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.buttonFilterCard:hover {
+    background-color: var(--pink-800);
+    color: var(--white);
+    transition: 0.5s;
+}
+
+.buttonFilterCard:focus {
+    background-color: var(--pink-500);
+    color: var(--white);
+}
+
+.cardPage {
+    padding-left: 2rem;
+    height: auto;
+}
+
+.cardPage p {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--pink-500);
+}
+
+.pageName {
+    color: var(--pink-800);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.dateInfo {
+    color: var(--pink-800);
+    font-size: 1.5rem;
+    gap: 1.6rem;
+    height: auto;
+}
+
+.dateInfo p {
+    color: var(--pink-800);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.cardUser {
+    gap: 1.6rem;
+}
+
+.user {
+    width: 38px;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user img {
+    width: 100%;
+}
+
+.userInfo p {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--pink-500);
+}
+
+.userInfo h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--pink-800);
+    font-weight: 600;
+}
+
+.cardIndicatos {
+    padding-left: 2rem;
+    height: auto;
+}
+
+.cardIndicators {
+    height: 85px;
+}
+
+.cardIndicatos p {
+    font-size: 1rem;
+    color: var(--pink-500);
+}
+
+.indicatorName {
+    font-size: 2rem;
+    color: var(--pink-800);
+    font-weight: 700;
+}
+
+.cardGraphs canvas {
+    max-height: 30vh;
+}
+
+.cardGraph {
+    padding: 0;
+}
+
+.cardGraphs {
+    max-height: 50vh;
+}
+
+.titleGraph {
+    font-size: 1.3rem;
+}
+
+.contentHeaderGraph {
+    padding: 0rem 1rem;
+}
+
+.containerTable {
+    margin: 2rem 0rem;
+}
+
+.cardTable {
+    flex-grow: 1;
+}
+
+.table>:not(caption)>*>* {
+    color: inherit;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: var(--white-100) !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-color-type: var(--bs-table-striped-color);
+    --bs-table-bg-type: inherit;
+}
+
+thead {
+    color: var(--pink-800);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+tr {
+    border: 1px solid transparent;
+}
+
+th {
+    font-weight: 700;
+}
+
+tbody {
+    color: var(--gray-600);
+    font-size: 1.3rem;
+}
+
+.statusIssued {
+    color: var(--blue) !important;
+}
+
+.statusCharge {
+    color: var(--yellow) !important;
+}
+
+.statusAccomplished {
+    color: var(--green) !important;
+}
+
+.statusDelay {
+    color: var(--red) !important;
+}
+
+.titleNotes {
+    color: var(--pink-500);
+    padding-top: 0.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.selectFilter label {
+    font-size: 1.2rem;
+    color: var(--pink-500);
+}
+
+.selectFilter select {
+    background: var(--white-200);
+    color: var(--gray-500);
+    border: none;
+    border-radius: 1rem;
+    padding: 0rem 0.5rem;
+    font-size: 1.2rem;
+}
+
+.filtersTable {
+    padding-left: 1.4rem;
+    padding-top: 0.6rem;
+}
+
+.contentFilters {
+    gap: 4rem;
+}
+
+@media (min-width: 1440px) {
+    .cardPage p {
+        font-size: 1.2rem;
+        margin: 0;
+        color: var(--pink-500);
+    }
+    
+    .pageName {
+        color: var(--pink-800);
+        font-size: 1.7rem;
+        margin-bottom: 0;
+    }
+
+    .userInfo p {
+        font-size: 1.2rem;
+        margin: 0;
+        color: var(--pink-500);
+    }
+    
+    .userInfo h2 {
+        font-size: 1.7rem;
+        margin: 0;
+        color: var(--pink-800);
+        font-weight: 600;
+    }
+
+    .cardIndicatos p {
+        font-size: 1.3rem;
+    }
+    
+    .indicatorName {
+        font-size: 2.2rem;
+    }
+
+    .titleNotes {
+        font-size: 1.4rem;
+    }
+    
+    .selectFilter label {
+        font-size: 1.3rem;
+        color: var(--pink-500);
+    }
+    
+    .selectFilter select {
+        font-size: 1.3rem;
+    } 
+}
+
+@media (max-width: 1439px) {
+    .userInfo p {
+        font-size: 1rem;
+        margin: 0;
+        color: var(--pink-500);
+    }
+    
+    .userInfo h2 {
+        font-size: 1.2rem;
+        margin: 0;
+        color: var(--pink-800);
+        font-weight: 600;
+    }
+    
+}
+
+@media (max-width: 1270px) {
+    .userInfo p {
+        font-size: 1rem;
+        margin: 0;
+        color: var(--pink-500);
+    }
+    
+    .userInfo h2 {
+        font-size: 1rem;
+        margin: 0;
+        color: var(--pink-800);
+        font-weight: 600;
+    } 
+}
+
+@media (max-width: 1190px) {
+    .cardPage p {
+        font-size: 1rem;
+        margin: 0;
+        color: var(--pink-500);
+    }
+    
+    .pageName {
+        color: var(--pink-800);
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+
+    .dateInfo {
+        color: var(--pink-800);
+        font-size: 1.2rem;
+        gap: 1.6rem;
+        height: auto;
+    }
+    
+    .dateInfo p {
+        color: var(--pink-800);
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+
+    .user {
+        width: 30px;
+        height: auto;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .userInfo p {
+        font-size: 0.7rem;
+        margin: 0;
+        color: var(--pink-500);
+    }
+    
+    .userInfo h2 {
+        font-size: 0.8rem;
+        margin: 0;
+        color: var(--pink-800);
+        font-weight: 600;
+    }
+
+    .cardIndicatos p {
+        font-size: 0.8rem;
+    }
+    
+    .indicatorName {
+        font-size: 1.6rem;
+    }
+
+    .titleNotes {
+        font-size: 1.1rem;
+    }
+    
+    .selectFilter label {
+        font-size: 1rem;
+        color: var(--pink-500);
+    }
+    
+    .selectFilter select {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        background-color: transparent;
+        font-size: 1rem;
+        border-radius: 1.6rem !important;
+        padding-left: 1.7rem;
+    }
+    
+    .nav-link span {
+        font-size: 1rem !important;
+        font-weight: 300;
+    }
+
+    .buttonFilter {
+        padding: 0rem 0.8rem;
+        border-radius: 1rem;
+        font-size: 0.6rem;
+    }
+
+    .nav-pills {
+        width: 11rem;
+    }
+
+    .logo-large {
+        height: auto;
+        width: 60%;
+    }
+    
+    th {
+        font-size: 1rem;
+    }
+
+    td {
+        font-size: 1rem;
+    }
+
+    .titleGraph {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .cardPage p {
+        font-size: 0.8rem;
+        margin: 0;
+        color: var(--pink-500);
+    }
+    
+    .pageName {
+        color: var(--pink-800);
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .dateInfo {
+        color: var(--pink-800);
+        font-size: 0.85rem;
+        gap: 1.6rem;
+        height: auto;
+    }
+    
+    .dateInfo p {
+        color: var(--pink-800);
+        font-size: 0.85rem;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+
+    .user {
+        width: 30px;
+        height: auto;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .userInfo p {
+        font-size: 0.4rem;
+        margin: 0;
+        color: var(--pink-500);
+    }
+    
+    .userInfo h2 {
+        font-size: 0.6rem;
+        margin: 0;
+        color: var(--pink-800);
+        font-weight: 600;
+    }
+
+    .cardIndicatos p {
+        font-size: 0.8rem;
+    }
+    
+    .indicatorName {
+        font-size: 1.6rem;
+    }
+
+    .titleNotes {
+        font-size: 0.9rem;
+    }
+    
+    .selectFilter label {
+        font-size: 0.7rem;
+        color: var(--pink-500);
+    }
+    
+    .selectFilter select {
+        font-size: 0.7rem;
+    }
+
+    .nav-link {
+        background-color: transparent;
+        font-size: 0.8rem;
+        border-radius: 1.6rem !important;
+        padding-left: 1.6rem;
+    }
+    
+    .nav-link span {
+        font-size: 0.8rem !important;
+        font-weight: 300;
+    }
+
+    .buttonFilter {
+        padding: 0rem 0.8rem;
+        border-radius: 1rem;
+        font-size: 0.6rem;
+    }
+
+    .nav-pills {
+        width: 9rem;
+    }
+
+    .logo-large {
+        height: auto;
+        width: 60%;
+    }
+    
+    th {
+        font-size: 0.7rem;
+    }
+
+    td {
+        font-size: 0.7rem;
+    }
+
+    .titleGraph {
+        font-size: 1rem;
+    }
+
+    .contentFilters {
+        gap: 2rem;
+    }
+
+    .buttonFilterCard {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        flex: 1;
+        margin-left: 1.2rem;
+        margin-bottom: 1.6rem;
+        padding-bottom: 2rem;
+    }
+
+    .cardPage {
+        align-items: center;
+    }
+
+    .home {
+        height: auto;
+    }
+    
+    .col-flexible {
+        flex: 0 0 100%; /* faça a coluna ocupar toda a largura */
+        margin-right: 0; /* remova a margem */
+        margin-bottom: 10px; /* adicione uma margem inferior opcional */
+    }
+}
+
+@media(max-height: 920px) {
+    .home {
+        justify-content: flex-start !important;
+    }
+}
