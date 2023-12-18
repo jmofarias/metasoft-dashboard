@@ -38,4 +38,4 @@ index.html
 
 Ou acessar o link abaixo:
 
-[Dashboard - metasoft]()
+[Dashboard - metasoft](https://jmofarias.github.io/metasoft-dashboard/)
